@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serenity Springs Homecare Plus</title>
+  <style>
+    :root {
+      --blue1: #c7e3f6;
+      --blue2: #5fa8d3;
+      --deep: #1b3c73;
+      --yellow: #f7d64a;
+      --orange: #f29b2b;
+      --text: #333;
+      --container-w: 720px;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 20px;
+    }
+
+    .page-wrap {
+      width: 100%;
+      max-width: var(--container-w);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    .logo-wrap {
+      background: linear-gradient(to bottom, var(--blue1) 0%, var(--blue2) 100%);
+      padding: 18px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      margin-top: 20px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .logo-wrap img {
+      width: 140px;
+      height: auto;
+    }
+
+    .content-gradient {
+      background: linear-gradient(to bottom, var(--blue1) 0%, var(--blue2) 100%);
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 0 0 16px 16px;
+      padding-bottom: 0;
+    }
+
+    .card {
+      background: transparent;
+      padding: 28px 34px;
+      border-radius: 14px;
+      text-align: center;
+      width: 90%;
+      margin-top: 20px;
+      color: black;
+    }
+
+    .tag {
+      font-style: italic;
+      color: black;
+      margin-bottom: 6px;
+    }
+
+    h1 {
+      margin: 6px 0 8px;
+      color: black;
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      margin: 8px 0 18px;
+      color: black;
+      font-size: 18px;
+    }
+
+    ul {
+      list-style: disc;
+      color: black;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    ul li {
+      text-align: left;
+      margin: 4px 0;
+      width: fit-content;
+    }
+
+    .arc-combo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      margin-top: 0;
+    }
+
+    svg.phone-address-combo {
+      width: 100%;
+      max-width: 720px;
+      overflow: visible;
+    }
+
+    .address-text {
+      font-weight: 700;
+      font-size: 18px;
+      font-family: Arial, sans-serif;
+    }
+
+    .contact-details {
+      background: var(--deep);
+      color: white;
+      padding: 18px 22px;
+      border-radius: 0 0 16px 16px;
+      text-align: left;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .contact-row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+
+    .contact-row p {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-wrap">
+    <div class="logo-wrap">
+      <img src="logo-placeholder.png" alt="Serenity Springs logo">
+    </div>
+
+    <div class="content-gradient">
+      <div class="card">
+        <p class="tag">“Gentle Hands, Warm Hearts”</p>
+        <h1>SERENITY SPRINGS<br>HOMECARE PLUS</h1>
+        <h2>OUR SERVICES</h2>
+        <ul>
+          <li>8-Bed Residency.</li>
+          <li>Daily Planned Activities.</li>
+          <li>High speed Internet & Cable TV.</li>
+          <li>24-Hour care with personalized care plans.</li>
+          <li>Secure and Monitored yard.</li>
+          <li>24-Hour on call Physician.</li>
+          <li>Luxurious shared common areas.</li>
+          <li>Secure Keypad Access.</li>
+          <li>Spacious Bathroom with safety bars.</li>
+          <li>Music and Massage therapy.</li>
+        </ul>
+      </div>
+
+      <!-- Yellow and Orange arcs touching and extended -->
+      <div class="arc-combo">
+        <svg class="phone-address-combo" viewBox="0 0 1000 400" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <linearGradient id="gradYellowBlend" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#fff6a1" />
+              <stop offset="60%" stop-color="#f7d64a" />
+              <stop offset="100%" stop-color="#f6c94d" />
+            </linearGradient>
+            <linearGradient id="gradOrangeBlend" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#f6c94d" />
+              <stop offset="40%" stop-color="#f7b24d" />
+              <stop offset="100%" stop-color="#f29b2b" />
+            </linearGradient>
+            <path id="phoneCurve" d="M0,120 C250,-20 750,-20 1000,120" />
+          </defs>
+
+          <!-- Uniform Yellow Phone Arc (wider and even) -->
+          <path d="M0,120 C250,-20 750,-20 1000,120 L1000,180 C750,40 250,40 0,180 Z" fill="url(#gradYellowBlend)"
+            stroke="#e6c33d" stroke-width="2" />
+          <text font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="28" fill="#1b1b1b">
+            <textPath href="#phoneCurve" startOffset="50%" text-anchor="middle">☎ 913-232-9496</textPath>
+          </text>
+
+          <!-- Orange Address Arc extended fully to bottom of blue -->
+          <path d="M0,180 C250,40 750,40 1000,180 L1000,400 L0,400 Z" fill="url(#gradOrangeBlend)" stroke="#e38a1d"
+            stroke-width="2" />
+          <text x="50%" y="270" text-anchor="middle" class="address-text" fill="#111">📍 6017 E Richards Dr. Shawnee,
+            Kansas 66216</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="contact-details">
+      <div class="contact-row">
+        <p><strong>Alternate:</strong> 913-232-8906</p>
+      </div>
+      <div class="contact-row">
+        <p>✉️ serenitysprings04@gmail.com</p>
+      </div>
+      <div class="contact-row">
+        <p><a href="#" style="color:inherit;">www.serenityspringshome.com</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
