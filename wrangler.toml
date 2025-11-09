@@ -1,0 +1,3 @@
+name = "black-lake-6710" # Ensure this line is present and correct
+main = "index.html"
+compatibility_date = "2025-11-09"
