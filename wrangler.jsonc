@@ -1,0 +1,7 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "compatibility_date": "2025-11-09",
+  "name": "black-lake-6710",
+  "main": "index.html"
+
+}
